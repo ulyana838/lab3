@@ -6,4 +6,4 @@ from django.urls import include, path  # Импорт функций include и 
 urlpatterns = [  # Определение списка URL-маршрутов для проекта
     path('admin/', admin.site.urls),  # Определение маршрута для административной панели Django
     path('', include('app.urls')),  # Определение маршрута для включения URL-маршрутов из приложения 'app'
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # Добавление маршрутов для обслуживания статических файлов в режиме разработки
+] 
